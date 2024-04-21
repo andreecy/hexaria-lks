@@ -6,11 +6,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -18,8 +13,28 @@ body {
   min-height: 100vh;
 }
 
+p {
+  margin: 0;
+}
+
 .title {
   text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.p-5 {
+  padding: 20px;
 }
 
 .container {
@@ -28,6 +43,20 @@ body {
   justify-content: center;
 }
 
+.menu {
+  border: 1px solid #fff;
+  width: 960px;
+  height: 600px;
+}
+
+.playbtn {
+  padding: 8px 16px;
+}
+
 #canvas {
-  border: 1px solid #000;
+  border: 1px solid #fff;
+}
+
+.hidden {
+  display: none;
 }

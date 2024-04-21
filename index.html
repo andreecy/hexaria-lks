@@ -9,7 +9,66 @@
   </head>
   <body>
     <h1 class="title">Hexaria</h1>
-    <div class="container">
+
+    <div id="menu" class="container">
+      <div class="menu flex">
+        <div class="flex flex-col w-1/2 p-5">
+          <h2>Welcome to hexaria</h2>
+
+          <div class="">
+            <p>Mode</p>
+            <input type="radio" id="mode1" name="mode" value="1" checked />
+            <label for="mode1">BOT</label><br />
+
+            <input type="radio" id="mode2" name="mode" value="2" />
+            <label for="mode2">2 Player</label><br />
+          </div>
+
+          <br />
+
+          <div>
+            <p>Player 1 Name</p>
+            <input type="text" id="name1" name="player1_name" />
+          </div>
+
+          <div id="player2_input" style="display: none">
+            <p>Player 2 Name</p>
+            <input type="text" id="name2" name="player2_name" />
+          </div>
+
+          <div style="margin-top: 20px">
+            <p>level</p>
+            <select id="level" name="level">
+              <option value="1">Easy</option>
+              <option value="2">Medium</option>
+              <option value="3">Hard</option>
+            </select>
+          </div>
+
+          <div style="margin-top: 20px">
+            <button id="playbtn" class="playbtn" disabled>Play Game</button>
+          </div>
+        </div>
+        <div class="w-1/2 p-5">
+          <h3>Instruction</h3>
+          <p>
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+            voluptate dolor minim nulla est proident. Nostrud officia pariatur
+            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
+            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
+            ex non excepteur duis sunt velit enim. Voluptate laboris sint
+            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="gameplay" class="container hidden">
       <canvas id="canvas" />
     </div>
 
