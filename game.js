@@ -1,8 +1,8 @@
 import { GameMenu } from "./menu";
 import { GamePlay } from "./gameplay";
 
-const screenMenu = document.querySelector("#menu");
-const screenGameplay = document.querySelector("#gameplay");
+const screenMenu = document.querySelector("#screenMenu");
+const screenGameplay = document.querySelector("#screenGameplay");
 
 export class Game {
   mode = 1; // 1. vs bot | 2. vs player 2
@@ -10,11 +10,16 @@ export class Game {
   player2Name = "";
   level = 1; // 1 easy, 2 medium, 3 hard
 
-  constructor() {
-    this.showMenu();
+  menu = null;
+  gameplay = null;
 
+  constructor() {
     this.menu = new GameMenu(this);
     this.gameplay = new GamePlay(this);
+
+    this.showMenu();
+    //
+    // this.startGameplay();
   }
 
   showMenu() {
